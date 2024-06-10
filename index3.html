@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Condiciones #3</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- EJERCICIO 3 -->
+</head>
+<body class="bg-dark text-white">
+    <a href="./index.html" class="btn btn-success" id="ej1">EJERCICIO #1</a>
+    <a href="./index2.html" class="btn btn-primary" id="ej2">EJERCICIO #2</a>
+    <a href="./index3.html" class="btn btn-danger" id="ej3">EJERCICIO #3</a>
+    <h1 class="bg-danger text-white">DESAFÍO CONDICIONES #3</h1>
+    <h3>Se debe construir una página con 3 select y opciones con dígitos del 1 al 9, al hacer
+        click a la opción ingresar se debe verificar que el password sea 911 y en ese caso
+        mostrar debajo del botón ingresar, un párrafo con el contenido "password 1
+        correcto", en caso de que el password sea 714 se debe mostrar en el párrafo
+        "password 2 es correcto", si ingresa otro valor se debe mostrar "password
+        incorrecto".</h3>
+    <ul>
+        <li>Se muestra correctamente el párrafo "password 1 correcto" al ingresar el
+            password 911 utilizando los select y luego presionando botón con el texto
+            ingresar.</li>
+        <li>Adicionalmente se muestra correctamente el párrafo "password 2 correcto" al
+            ingresar el password 714 utilizando los select y luego presionando botón con el
+            texto ingresar.</li>
+        <li>Se muestra password incorrecto al seleccionar cualquier otro password.</li>
+    </ul>
+
+    <select id="passwordSelect">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    <select id="passwordSelect2">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    <select id="passwordSelect3">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    <button id="verificarBtn" class="btn btn-warning">Ingresar</button>
+    <p id="resultado"></p>
+
+    <!-- Si lo realizo con Inputs -->
+    <!-- <form>
+        <input type="number" id="passwordInput" placeholder="Ingrese un número del 1 al 9" min="1" max="9">
+        <input type="number" id="passwordInput2" placeholder="Ingrese un número del 1 al 9" min="1" max="9">
+        <input type="number" id="passwordInput3" placeholder="Ingrese un número del 1 al 9" min="1" max="9">
+        <button type="button" id="verificarBtn">Ingresar</button>
+    </form>
+    <p id="resultado"></p> -->
+
+    <script src="./assets/js/script3.js"></script>
+</body>
+</html>

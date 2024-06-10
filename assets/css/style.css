@@ -1,0 +1,60 @@
+/* ---- EJERCICIO #1 ---- */
+#bordeRojo img{
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.transformar img{
+    border: 2px solid red;
+}
+
+#ej1, #ej2, #ej3{
+    margin: 0.5%;
+}
+
+
+/* ---- EJERCICIO #2 ---- */
+.centrarB{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.centrarB p{
+    margin-top: 10px;
+}
+
+.stickersCont {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sticker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stickersCont img {
+    max-width: 75%;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+/* ---- EJERCICIO #3 ---- */
+.correcto {
+    color: rgb(0, 224, 0);
+    font-weight: bold;
+}
+.incorrecto {
+    color: rgb(255, 100, 100);
+    font-weight: bold;
+}

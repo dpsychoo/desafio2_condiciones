@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Condiciones #2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- EJERCICIO 2 -->
+</head>
+<body class="bg-dark text-white">
+    <a href="./index.html" class="btn btn-success" id="ej1">EJERCICIO #1</a>
+    <a href="./index2.html" class="btn btn-primary" id="ej2">EJERCICIO #2</a>
+    <a href="./index3.html" class="btn btn-danger" id="ej3">EJERCICIO #3</a>
+    <h1 class="bg-primary text-white">DESAFÍO CONDICIONES #2</h1>
+    <h3>Se debe construir una página web que permita pedir hasta 10 stickers de los 3 tipos
+        disponibles. Para eso deberá existir un input debajo de cada imagen donde el
+        usuario podrá ingresar un número. En caso de que la suma de todos los stickers
+        seleccionados sea menor o igual 10 se indicará en un párrafo nuevo la cantidad de
+        stickers llevados. Ejemplo "llevas 5 stickers" en cualquier otro caso se mostrará un
+        texto que dice "Llevas demasiados stickers"</h3>
+    <ul>
+        <li>El párrafo muestra la cantidad de stickers seleccionados</li>
+        <li>El párrafo muestra que lleva demasiados stickers en caso de que la cantidad
+            sea mayor que 10.</li>
+    </ul>
+    <!-- Sticker 1 -->
+    <div class="stickersCont">
+        <div class="sticker">
+            <img src="./assets/img/sticker1.png" alt="Sticker_1">
+            <input type="number" id="sticker1" min="0" max="10" value="0">
+        </div>
+        <!-- Sticker 2 -->
+        <div class="sticker">
+            <img src="./assets/img/sticker2.png" alt="Sticker_2">
+            <input type="number" id="sticker2" min="0" max="10" value="0">
+        </div>
+        <!-- Sticker 3 -->
+        <div class="sticker">
+            <img src="./assets/img/sticker3.png" alt="Sticker_3">
+            <input type="number" id="sticker3" min="0" max="10" value="0">
+        </div>
+    </div>
+    <br>
+    <div class="centrarB">
+    <button id="calcularBtn" class="btn btn-outline-warning">Calcular</button>
+    <p id="mensaje"></p>
+    </div>
+
+    <script src="./assets/js/script2.js"></script>
+</body>
+</html>
